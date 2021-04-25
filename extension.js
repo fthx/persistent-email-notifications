@@ -1,7 +1,7 @@
 /* 
 	Persistent Email Notifications
-	Copyright Francois Thirioux 2020
-	GitHub contributors: @fthx
+	Copyright Francois Thirioux 2021
+	Contributors: @fthx
 	License GPL v3
 */
 
@@ -10,7 +10,7 @@ const Main = imports.ui.main;
 const MessageTray = Main.messageTray;
 const Urgency = imports.ui.messageTray.Urgency;
 
-var EMAIL_APP_NAMES = [ "Thunderbird", "Evolution", "Mailspring", "Geary" ];
+var EMAIL_APP_NAMES = [ "Thunderbird", "Evolution", "Mailspring", "Geary", "TypeApp" ];
 
 
 class Extension {
@@ -25,7 +25,7 @@ class Extension {
  		});
         if (this.source_is_email_app) {
         	this.notification_added = this.new_source.connect('notification-added', this._on_notification_added.bind(this));
-        };
+        }
     }
     
     _on_notification_added(tray, notification) {
