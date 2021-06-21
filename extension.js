@@ -10,7 +10,7 @@ const Main = imports.ui.main;
 const MessageTray = Main.messageTray;
 const Urgency = imports.ui.messageTray.Urgency;
 
-var EMAIL_APP_NAMES = [ "Thunderbird", "Evolution", "Mailspring", "Geary", "TypeApp" ];
+var EMAIL_APP_NAMES = [ "Thunderbird", "Evolution", "Mailspring", "Geary", "TypeApp", "BlueMail" ];
 
 
 class Extension {
